@@ -27,3 +27,6 @@ function calculator(num1, operator, num2) {
 }
 
 calculator(2, "*", 4);
+
+const calc3 = calculator;
+calc3(1, "*", 4);

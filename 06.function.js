@@ -21,3 +21,14 @@ sayHelloToValue("이다영");
 sayHelloToValue(1);
 printRestParameters(1, 2, 3);
 printParameters(1, 2, 3, 4, 5);
+
+function sayHi(name) {
+  console.log(`Hi ${name}`);
+}
+
+function greet(name, callback) {
+  callback(name);
+}
+
+greet("우영우", sayHello);
+greet("우영우", sayHi);
