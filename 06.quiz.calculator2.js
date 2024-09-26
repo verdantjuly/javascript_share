@@ -27,3 +27,6 @@ calculator(1, add, 4);
 
 // calc2 함수를 호출할때 화살표 함수를 사용해서 호출하시오.
 calculator(3, (n1, n2) => n1 + n2, 5);
+calculator(3, (n1, n2) => n1 - n2, 5);
+calculator(3, (n1, n2) => n1 * n2, 5);
+calculator(3, (n1, n2) => n1 / n2, 5);
