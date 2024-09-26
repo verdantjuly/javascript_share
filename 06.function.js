@@ -1,7 +1,7 @@
-function sayHello() {
-  console.log("Hello");
+function sayHello(name) {
+  console.log(`Hello ${name}`);
 } // 함수 정의
-sayHello(); // 함수 호출
+sayHello("이다영"); // 함수 호출
 
 function sayHelloToValue(value) {
   console.log(`Hello ${value}`);
