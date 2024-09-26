@@ -32,3 +32,8 @@ function greet(name, callback) {
 
 greet("우영우", sayHello);
 greet("우영우", sayHi);
+
+// 일회용 함수는 화살표 함수로 활용한다.
+let add3 = (n1, n2) => {
+  return n1 + n2;
+};
