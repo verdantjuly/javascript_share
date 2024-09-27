@@ -267,3 +267,47 @@ const calcPractice3 = (num1, op, num2) => {
       return num1 / num2;
   }
 };
+
+calc2(
+  1,
+  function (x, y) {
+    return x + y;
+  },
+  3
+);
+
+calc2(
+  4,
+  (x, y) => {
+    x + y;
+  },
+  8
+);
+
+calc2(
+  5,
+  function (x, y) {
+    return x - y;
+  },
+  6
+);
+
+calc2(
+  5,
+  (x, y) => {
+    return x - y;
+  },
+  6
+);
+
+function bmi(weight, height) {
+  return weight / (height * height);
+}
+
+const bmi2 = function (weight, height) {
+  return weight / (height * height);
+};
+
+const bmi3 = (weight, height) => {
+  return weight / (height * height);
+};
