@@ -105,3 +105,19 @@ const student2 = new Student("김철수", 1, 3, 5);
 
 student1.info();
 student2.info();
+
+// class 사용
+
+class Person1 {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  greet() {
+    console.log("Hello " + this.name);
+  }
+}
+
+// person3은 Person1 클래스의 인스턴스
+const person3 = new Person1("화사", 30);
+person3.greet();
