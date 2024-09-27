@@ -201,3 +201,23 @@ function operation(n1, n2) {
 
 result = calc2(2, operation, 4);
 console.log(`연산의 결과는 ${result}입니다. `);
+
+// 다양한 함수 정의 방식
+
+// 함수 선언문
+function add01(n1, n2) {
+  return n1 + n2;
+}
+console.log(add01(1, 2));
+
+// 함수 표현식
+let add02 = function (n1, n2) {
+  return n1 + n2;
+};
+console.log(add02(1, 2));
+
+// 화살표 함수
+let add03 = (n1, n2) => {
+  return n1 + n2;
+};
+console.log(add03(1, 2));
