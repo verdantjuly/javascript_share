@@ -9,10 +9,10 @@ class Vehicle {
   constructor(speed) {
     this.speed = speed;
   }
-  increase() {
+  increaseSpeed() {
     this.speed = this.speed + 10;
   }
-  decrease() {
+  decreaseSpeed() {
     this.speed = this.speed - 10;
   }
   info() {
@@ -22,5 +22,5 @@ class Vehicle {
 
 const car = new Vehicle(10);
 
-car.increase();
+car.increaseSpeed();
 car.info();
