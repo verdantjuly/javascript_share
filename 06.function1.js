@@ -268,6 +268,7 @@ const calcPractice3 = (num1, op, num2) => {
   }
 };
 
+// 함수 표현식
 calc2(
   1,
   function (x, y) {
@@ -276,6 +277,7 @@ calc2(
   3
 );
 
+// 화살표 함수
 calc2(
   4,
   (x, y) => {
@@ -284,6 +286,7 @@ calc2(
   8
 );
 
+// 함수 표현식
 calc2(
   5,
   function (x, y) {
@@ -292,6 +295,7 @@ calc2(
   6
 );
 
+// 화살표 함수
 calc2(
   5,
   (x, y) => {
