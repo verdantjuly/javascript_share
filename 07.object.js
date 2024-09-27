@@ -26,6 +26,8 @@ const person = {
 
 // 객체는 Heap 영역에 만들어진다.
 
+person.greet();
+
 // 객체 내부의 속성에 접근할 때는 '.', 또는 ["속성명"]을 사용
 person.age = 20;
 person["name"] = "장원영";
