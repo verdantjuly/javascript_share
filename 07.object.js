@@ -35,3 +35,54 @@ person["name"] = "장원영";
 
 console.log(person.name, person["age"]);
 person.greet();
+
+// Student 객체 만들기 실습
+// 이름 학년 번호 info 함수
+// info : n학년 n반 n번 ㅇㅇㅇ입니다.
+
+const student = {
+  grade: 2,
+  class: 9,
+  number: 11,
+  name: "김철수",
+  info: function () {
+    console.log(
+      `${this.grade}학년 ${this.class}반 ${this.number}번 ${this.name}입니다.`
+    );
+  },
+};
+
+student.info();
+
+// info 함수를 화살표 함수로 쓰면 this가 없어서 undefined가 나옴
+// 나중에 설명해 주심
+
+// 객체의 속성 추가
+person.job = "축구선수";
+console.log(person.job);
+
+person.info = function () {
+  console.log(`이름은 ${this.name} 이고 직업은 ${this.job} 이다.`);
+  console.log(`이름은 ${person.name} 이고 직업은 ${person.job} 이다.`);
+};
+person.info();
+
+// 객체의 속성 삭제
+delete person.age;
+console.log(person.age);
+
+// 생성자 함수
+// 생성자 함수명은 대문자로 쓴다.
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+  this.greet = function () {
+    console.log("Hello " + this.name);
+  };
+}
+
+const person1 = new Person("차은경", 30);
+const person2 = new Person("조유리", 20);
+
+person1.greet();
+person2.greet();
