@@ -86,3 +86,22 @@ const person2 = new Person("조유리", 20);
 
 person1.greet();
 person2.greet();
+
+// Student 생성자 함수 만들기 실습
+function Student(name, grade, className, number) {
+  this.name = name;
+  this.grade = grade;
+  this.className = className;
+  this.number = number;
+  this.info = function () {
+    console.log(
+      `안녕하세요 저는 ${grade}학년 ${className}반 ${number}번 ${name}입니다.`
+    );
+  };
+}
+
+const student1 = new Student("이다영", 1, 3, 15);
+const student2 = new Student("김철수", 1, 3, 5);
+
+student1.info();
+student2.info();
