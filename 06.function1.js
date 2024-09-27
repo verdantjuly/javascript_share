@@ -321,6 +321,7 @@ const bmi3 = (weight, height) => {
   return weight / (meter * meter);
 };
 
+// 함수를 매개변수로 이용한 BMI 계산기
 function bmiPrinter(calculator, weight, height) {
   const bmi = calculator(weight, height);
   let result;
