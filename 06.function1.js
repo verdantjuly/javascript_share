@@ -47,6 +47,10 @@ function sayHello1(name, age) {
   console.log(`안녕하세요, 저는 ${age} 세 ${name} 입니다.`);
 }
 
+function sayHello2(name) {
+  console.log(`안녕하세요, 저는  ${name} 입니다.`);
+}
+
 sayHello1("손흥민", 31);
 sayHello1("우영우", 20);
 
@@ -136,3 +140,42 @@ function calc(num1, op, num2) {
 }
 
 console.log(calc(1, "+", 2));
+
+// 변수에 함수 할당하기
+const aaa = sayHello;
+
+// ==========================================================
+// 어려운 내용이므로 이 박스 안에 있는 것은 건너뛰어도 됩니다.
+// ==========================================================
+
+// Heap 영역 : 객체들이 만들어지는 영역 -> 함수 객체가 만들어진다.
+// Stack 영역 : 20
+
+// 참조형 (reference type) : 메모리의 주소값을 갖고 있다. 주소를 가리킨다.
+// 값형 (value type)
+
+// ==========================================================
+
+// 매개변수에도 함수를 보낼 수 있다.
+
+function getData() {
+  // 시간 많이 걸린다고 가정 ( 예 : 인터넷에서 데이터를 받아온다. 디비에서 데이터를 읽어온다.)
+  // 이러한 프로그래밍은 비동기 프로그래밍으로 작성
+  for (let i = 0; i < 9999; i = i + 1) {}
+  return "data";
+}
+
+function handler(callback) {
+  let result = getData();
+  callback(result);
+}
+
+handler(sayHello);
+handler(sayHello1); // undefined : 매개변수를 주지 않아서
+handler(calc); // undefined : 매개변수를 주지 않아서
+
+handler(sayHello2);
+
+// 함수를 매개변수로 쓰는 예시
+// 1. 비동기 프로그래밍 : 시간이 오래 걸리는 작업
+// 2. 라이브러리 제작 : 사용자가 원하는 함수로 변경하기 위해
