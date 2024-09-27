@@ -179,3 +179,14 @@ handler(sayHello2);
 // 함수를 매개변수로 쓰는 예시
 // 1. 비동기 프로그래밍 : 시간이 오래 걸리는 작업
 // 2. 라이브러리 제작 : 사용자가 원하는 함수로 변경하기 위해
+
+// 더하기 함수를 매개변수로 쓰는 계산기
+function calc2(num1, opFunc, num2) {
+  return opFunc(num1, num2);
+}
+
+function add(num1, num2) {
+  return num1 + num2;
+}
+
+calc2(1, add, 2);
