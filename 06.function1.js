@@ -300,14 +300,44 @@ calc2(
   6
 );
 
+// BMI 계산기
+// BMI = 몸무게 / (키 * 키)
+
+// 함수 선언문
 function bmi(weight, height) {
-  return weight / (height * height);
+  const meter = height / 100;
+  return weight / (meter * meter);
 }
 
+// 함수 표현식
 const bmi2 = function (weight, height) {
-  return weight / (height * height);
+  const meter = height / 100;
+  return weight / (meter * meter);
 };
 
+// 화살표 함수
 const bmi3 = (weight, height) => {
-  return weight / (height * height);
+  const meter = height / 100;
+  return weight / (meter * meter);
 };
+
+function bmiPrinter(calculator, weight, height) {
+  const bmi = calculator(weight, height);
+  let result;
+  if (bmi < 18.5) {
+    result = "저체중";
+  } else if (18.5 <= bmi <= 22.9) {
+    result = "정상";
+  } else if (23 <= bmi <= 24.9) {
+    result = "위험체중";
+  } else if (25 < bmi <= 29.9) {
+    result = "1단계 비만";
+  } else if (30 <= bmi) {
+    result = "2단계 비만";
+  } else {
+    result = "알 수 없음";
+  }
+  console.log(`당신의 BMI는 ${bmi}로 ${result}입니다.`);
+}
+
+bmiPrinter(bmi, 47, 165);
