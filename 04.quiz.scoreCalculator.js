@@ -1,3 +1,4 @@
+// 퀴즈
 // 주어진 score에 따라서 학점(A,B~F)을 출력하는 조건문(if~else if) 를 이용해서 작성하기
 
 function scoreCalculator(score) {

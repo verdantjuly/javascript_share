@@ -1,3 +1,4 @@
+// 퀴즈
 // 구구단을 이중 for루프를 이용해서 출력하시오.
 
 function multiplier() {

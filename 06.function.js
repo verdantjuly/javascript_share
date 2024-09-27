@@ -1,3 +1,6 @@
+// 함수
+// 데이터를 받아 처리하고 내보내는 코드의 모음인 함수에 대해 알아봅시다.
+
 function sayHello(name) {
   console.log(`Hello ${name}`);
 } // 함수 정의

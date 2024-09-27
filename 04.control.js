@@ -1,3 +1,7 @@
+// 제어문
+// 조건에 따라 다른 코드블럭을 실행하는 제어문에 대해 알아봅시다.
+
+// if
 const adult = 19;
 let age = 15;
 console.log("=============== if  ================");
@@ -12,6 +16,8 @@ if (age < adult) {
 }
 
 age = 20;
+
+// if ~ else
 
 console.log("=============== if ~ else ================");
 if (age < adult) {
@@ -33,6 +39,8 @@ if (age > adult) {
     console.log("당신은 미성년 남성입니다.");
   }
 }
+
+// if else if
 
 console.log("============= if else if ===============");
 let browser = "Chrome";
