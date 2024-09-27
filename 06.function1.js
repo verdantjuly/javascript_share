@@ -101,3 +101,36 @@ function multiply(x, y) {
 let x = add2(5);
 let y = add2(10);
 let result = multiply(x, y);
+console.log(result);
+
+function calcGrade(score) {
+  if (score >= 90) {
+    return "A";
+  } else if (score >= 80) {
+    return "B";
+  } else if (score >= 70) {
+    return "C";
+  } else if (score >= 60) {
+    return "D";
+  } else if (score >= 50) {
+    return "E";
+  } else {
+    return "F";
+  }
+}
+
+const grade = calcGrade(45);
+console.log(grade);
+
+function calc(num1, op, num2) {
+  switch (op) {
+    case "+":
+      return num1 + num2;
+    case "-":
+      return num1 - num2;
+    case "*":
+      return num1 * num2;
+    case "/":
+      return num1 / num2;
+  }
+}
