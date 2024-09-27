@@ -224,3 +224,46 @@ let add03 = (n1, n2) => {
   return n1 + n2;
 };
 console.log(add03(1, 2));
+
+// 연습
+// 함수 선언문
+function calcPractice(num1, op, num2) {
+  switch (op) {
+    case "+":
+      return num1 + num2;
+    case "-":
+      return num1 - num2;
+    case "*":
+      return num1 * num2;
+    case "/":
+      return num1 / num2;
+  }
+}
+
+// 함수 표현식
+const calcPractice2 = function (num1, op, num2) {
+  switch (op) {
+    case "+":
+      return num1 + num2;
+    case "-":
+      return num1 - num2;
+    case "*":
+      return num1 * num2;
+    case "/":
+      return num1 / num2;
+  }
+};
+
+// 화살표 함수
+const calcPractice3 = (num1, op, num2) => {
+  switch (op) {
+    case "+":
+      return num1 + num2;
+    case "-":
+      return num1 - num2;
+    case "*":
+      return num1 * num2;
+    case "/":
+      return num1 / num2;
+  }
+};
