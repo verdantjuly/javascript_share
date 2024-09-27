@@ -189,4 +189,15 @@ function add(num1, num2) {
   return num1 + num2;
 }
 
-calc2(1, add, 2);
+result = calc2(1, add, 2);
+console.log(`연산의 결과는 ${result}입니다. `);
+
+// (n1 * n1 + n2) / n1 + n2 를 계산하는 함수를 사용하고 싶어
+// 라이브러리 개발자 : 그럼 네가 만들어~
+
+function operation(n1, n2) {
+  return (n1 * n1 + n2) / n1 + n2;
+}
+
+result = calc2(2, operation, 4);
+console.log(`연산의 결과는 ${result}입니다. `);
