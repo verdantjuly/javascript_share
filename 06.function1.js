@@ -24,7 +24,7 @@ sayHello();
 sayHello();
 sayHello();
 
-// add 함수의 진화 ㅏ
+// add 함수의 진화
 
 // 1+2만 가능
 function add() {
