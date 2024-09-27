@@ -10,3 +10,26 @@
 // const obj = {key : "value"}
 
 // 사전과 비슷하다고 생각하면 된다. key를 알면 value를 뽑아낼 수 있다.
+
+// 연관성 있는 것끼리 객체로 묶자.
+
+// 리터럴 = 값
+
+const person = {
+  name: "홍길동",
+  age: 30,
+  greet: function () {
+    // this는 현재의 object 자신을 의미함
+    console.log("Hello, " + this.name);
+  },
+};
+
+// 객체는 Heap 영역에 만들어진다.
+
+// 객체 내부의 속성에 접근할 때는 '.', 또는 ["속성명"]을 사용
+person.age = 20;
+person["name"] = "장원영";
+// person은 안 바뀌고 객체의 속성만 바뀜
+
+console.log(person.name, person["age"]);
+person.greet();
