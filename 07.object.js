@@ -121,3 +121,20 @@ class Person1 {
 // person3은 Person1 클래스의 인스턴스
 const person3 = new Person1("화사", 30);
 person3.greet();
+
+class Student1 {
+  constructor(name, grade, className, number) {
+    this.name = name;
+    this.grade = grade;
+    this.className = className;
+    this.number = number;
+  }
+  info() {
+    console.log(
+      `안녕하세요 저는 ${this.grade}학년 ${this.className}반 ${this.number}번호 ${this.name}입니다.`
+    );
+  }
+}
+
+const student3 = new Student1("윤여정", 3, 4, 23);
+student3.info();
