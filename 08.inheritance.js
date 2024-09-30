@@ -62,7 +62,7 @@ car2.drive();
 // • unLoad를 화면에 인쇄하는 unLoad 메쏘드를 정의하라.
 
 class Truck extends Car {
-  constructor() {
+  constructor(speed, wheels, seats) {
     super(speed, wheels, seats); // Car 클래스 상속
     this.loadage = 0;
   }
