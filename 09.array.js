@@ -79,3 +79,17 @@ console.log(bts1);
 bts3 = bts1.slice(-3);
 console.log(bts3);
 console.log(bts1);
+
+// 배열 합치기
+
+const bts = bts1.concat(bts2);
+console.log(bts);
+
+// 역순 배열
+
+const rbts = bts.reverse();
+console.log(rbts);
+
+// 배열을 문자열로 합치기
+let members = bts.join(", ");
+console.log(members);
