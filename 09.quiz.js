@@ -4,12 +4,19 @@
 
 const list = ["슈가", "차은우", "박서준", "이도현", "제이홉", "주우재", "지민"];
 const bts = ["진", "슈가", "제이홉", "RM", "지민", "뷔", "정국"];
-const listBts = [];
 
-list.forEach((member) => {
-  if (bts.includes(member)) {
-    listBts.push(member);
+function findBts(list, bts, callback) {
+  const result = [];
+  for (const member of list) {
+    if (bts.includes(member)) {
+      result.push(member);
+    }
   }
-});
+  callback(result);
+}
 
-console.log(listBts.join(" "));
+function joinAndPrint(array) {
+  console.log(array.join(" "));
+}
+
+findBts(list, bts, joinAndPrint);
