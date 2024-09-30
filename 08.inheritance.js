@@ -81,3 +81,5 @@ const t2 = new Truck(40, 6, 4);
 
 t1.load(10);
 t2.unload();
+
+// 생성자 함수 > ES6 > Class 도입
