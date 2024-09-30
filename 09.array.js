@@ -81,15 +81,13 @@ console.log(bts3);
 console.log(bts1);
 
 // 배열 합치기
-
 bts1 = ["지민", "뷔", "RM", "정국"];
 bts2 = ["제이홉", "슈가", "진"];
 const bts = bts1.concat(bts2);
 console.log(bts);
 
 // 역순 배열
-
-const rbts = bts.reverse();
+const rbts = bts.reverse(); // 배열의 순서를 바꾸고 바꾼 값의 참조를 반환
 console.log(rbts);
 
 // 배열을 문자열로 합치기
