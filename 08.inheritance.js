@@ -41,8 +41,16 @@ class Car extends Vehicle {
   };
 }
 
+// 인스턴싱
 const car1 = new Car(50, 4, 2);
 const car2 = new Car(20, 6, 4);
 
 // car1과 car2는 관계가 없다.
 // 서로 타입만 일치한다.
+// 클래스 = 사용자 정의 타입
+
+car1.speedUp();
+car1.drive();
+
+car2.speedDown();
+car2.drive();
