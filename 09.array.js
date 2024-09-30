@@ -53,11 +53,29 @@ let last = bts1.pop(); // 마지막 아이템 반환하고 삭제
 console.log(last);
 console.log(bts1);
 
+console.log("====== splice ======");
+
 // 특정한 index에서 count만큼 삭제 splice(index,count)
-const deleted = bts1.splice(1, 1);
+const deleted = bts1.splice(1, 1); // 반환값이 있음
 console.log(bts1);
 console.log(deleted);
 
 // 특정한 index에서 추가 splice(index, 0, item, item, ...)
 bts1.splice(1, 0, "차은우", "이도현");
+console.log(bts1);
+
+console.log("====== slice ======");
+
+let bts3 = bts1.slice(0, 2); // 일부분으로 새로운 배열을 만듬
+console.log(bts3);
+console.log(bts1);
+
+// - 값은 뒤쪽에서부터 세는 것이 고정
+
+bts3 = bts1.slice(-1);
+console.log(bts3);
+console.log(bts1);
+
+bts3 = bts1.slice(-3);
+console.log(bts3);
 console.log(bts1);
