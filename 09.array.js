@@ -37,3 +37,18 @@ console.log(bts2.indexOf("슈가")); // 값이 없을 때는 -1을 반환
 
 console.log(bts1.includes("RM")); // 포함되어 있는지 아닌지 알려주는 메서드, 불리언 반환
 console.log(bts2.includes("유재석"));
+
+// 추가
+bts1.push("차은우"); // 맨 뒤에 추가
+console.log(bts1);
+console.log(bts1.length);
+bts1.unshift("이도현"); // 맨 앞에 추가
+console.log(bts1);
+
+// 삭제
+let first = bts1.shift(); // 첫번째 아이템 반환하고 삭제
+console.log(bts1);
+console.log(first);
+let last = bts1.pop(); // 마지막 아이템 반환하고 삭제
+console.log(last);
+console.log(bts1);
