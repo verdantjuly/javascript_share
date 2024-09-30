@@ -36,4 +36,4 @@ console.log(bts1.indexOf("슈가")); // 순서 알려주는 메서드, 숫자형
 console.log(bts2.indexOf("슈가")); // 값이 없을 때는 -1을 반환
 
 console.log(bts1.includes("RM")); // 포함되어 있는지 아닌지 알려주는 메서드, 불리언 반환
-console.log(bts2.includes("지민"));
+console.log(bts2.includes("유재석"));
