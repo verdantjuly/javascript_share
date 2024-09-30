@@ -54,3 +54,22 @@ car1.drive();
 
 car2.speedDown();
 car2.drive();
+
+// 클래스 상속 실습 : 트럭 클래스
+// • Car class를 상속받아서 Truck class를 정의하라.
+// • 적재량을 관리하는 loadage 정수형 변수를 정의하고 초기값 0으로 설정
+// • load를 화면에 인쇄하는 load 메쏘드를 정의하라.
+// • unLoad를 화면에 인쇄하는 unLoad 메쏘드를 정의하라.
+
+class Truck extends Car {
+  constructor() {
+    super(speed, wheels, seats); // Car 클래스 상속
+    this.loadage = 0;
+  }
+  load = () => {
+    console.log("load");
+  };
+  unload = () => {
+    console.log("unLoad");
+  };
+}
