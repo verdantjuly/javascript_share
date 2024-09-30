@@ -91,5 +91,5 @@ const rbts = bts.reverse();
 console.log(rbts);
 
 // 배열을 문자열로 합치기
-let members = bts.join(", ");
+let members = bts.join(", "); // ", " seperator
 console.log(members);
