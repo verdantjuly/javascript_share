@@ -15,3 +15,14 @@ console.log(array);
 
 // length - 요소의 개수
 console.log(numbers.length);
+
+numbers[3] = -4;
+numbers[5] = 6; // 추가
+
+console.log(numbers.length, numbers);
+
+numbers[8] = 7; // 중간 numbers[6], numbers[7] 은 undefined로 채워짐
+console.log(numbers.length, numbers);
+
+delete numbers[1]; // undefined가 된다.
+console.log(numbers.length, numbers);
