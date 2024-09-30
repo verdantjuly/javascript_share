@@ -33,7 +33,7 @@ let bts1 = ["진", "슈가", "제이홉", "RM"];
 console.log(bts1);
 let bts2 = new Array("지민", "뷔", "정국");
 console.log(bts1.indexOf("슈가")); // 순서 알려주는 메서드, 숫자형 반환
-console.log(bts2.indexOf("슈가"));
+console.log(bts2.indexOf("슈가")); // 값이 없을 때는 -1을 반환
 
 console.log(bts1.includes("RM")); // 포함되어 있는지 아닌지 알려주는 메서드, 불리언 반환
 console.log(bts2.includes("지민"));
