@@ -10,11 +10,13 @@ class Vehicle {
     this.speed = speed;
   }
   increaseSpeed() {
-    this.speed = this.speed + 10;
+    this.speed += 10;
   }
-  decreaseSpeed() {
-    this.speed = this.speed - 10;
-  }
+
+  // 클래스 안에서 화살표 함수의 this는 만들어지는 인스턴스를 뜻한다
+  decreaseSpeed = () => {
+    this.speed -= 10;
+  };
   info() {
     console.log(`현재 속도는 ${this.speed} 입니다.`);
   }
