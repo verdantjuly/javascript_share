@@ -13,7 +13,7 @@ console.log(array[1]); // undefined
 array = new Array(1, 2, 3, 4, 5);
 console.log(array);
 
-// length - 요소의 개수
+// length - 요소 item의 개수
 console.log(numbers.length);
 
 numbers[3] = -4;
@@ -24,5 +24,6 @@ console.log(numbers.length, numbers);
 numbers[8] = 7; // 중간 numbers[6], numbers[7] 은 undefined로 채워짐
 console.log(numbers.length, numbers);
 
+// item 삭제
 delete numbers[1]; // undefined가 된다.
 console.log(numbers.length, numbers);
