@@ -6,7 +6,7 @@ const numbers = [1, 2, 3, 4, 5];
 console.log(numbers[0]); // index는 0번부터 시작
 
 let array = new Array(2); // size를 2로 정의
-console.log(array);
+console.log(array); // [undefined, undefined]
 
 array = new Array(1, 2, 3, 4, 5);
 console.log(array);
