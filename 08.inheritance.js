@@ -40,3 +40,9 @@ class Car extends Vehicle {
     console.log(`현재 속도 ${this.speed}로 운행 중입니다. `);
   };
 }
+
+const car1 = new Car(50, 4, 2);
+const car2 = new Car(20, 6, 4);
+
+// car1과 car2는 관계가 없다.
+// 서로 타입만 일치한다.
