@@ -144,3 +144,8 @@ for (const member of bts) {
 bts.forEach((member, index, array) => {
   console.log(`전체 ${array.length}명중에 ${index}번째 멤버 ${member}입니다.`);
 });
+
+// forEach 사용
+bts.forEach((_, index, array) => {
+  console.log(`전체 ${array.length}명중에 ${index}번째 멤버 ${member}입니다.`);
+});
