@@ -16,6 +16,8 @@ const bts = ["진", "슈가", "제이홉", "RM", "지민", "뷔", "정국"];
 //       2. bts이면 result에 push 하기,
 //       3. push한 배열을 join 하여 문자열로 만들기
 
+// 심화 - 함수로 변형
+
 function findBts(list, bts, callback) {
   const result = [];
   for (const member of list) {
