@@ -33,3 +33,9 @@ function joinAndPrint(array) {
 }
 
 findBts(list, bts, joinAndPrint);
+
+findBts(list, bts, (array) => {
+  for (const memeber of array) {
+    console.log(memeber);
+  }
+});
