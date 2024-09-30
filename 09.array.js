@@ -145,7 +145,7 @@ bts.forEach((member, index, array) => {
   console.log(`전체 ${array.length}명중에 ${index}번째 멤버 ${member}입니다.`);
 });
 
-// forEach 사용
+// forEach 사용 : member 사용 안 할 때 _로 생략
 bts.forEach((_, index, array) => {
-  console.log(`전체 ${array.length}명중에 ${index}번째 멤버 ${member}입니다.`);
+  console.log(`전체 ${array.length}명중에 ${index}번째 멤버 ${_}입니다.`);
 });
