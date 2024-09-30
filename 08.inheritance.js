@@ -31,7 +31,7 @@ class Vehicle {
 // 하위 클래스(Sub Class)인 Car
 class Car extends Vehicle {
   constructor(speed, wheels, seats) {
-    super(speed);
+    super(speed); // super은 상위 클래스의 constructor
     this.wheels = wheels;
     this.seats = seats;
   }
