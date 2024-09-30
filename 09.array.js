@@ -93,3 +93,54 @@ console.log(rbts);
 // 배열을 문자열로 합치기
 let members = bts.join(", "); // ", " seperator
 console.log(members);
+
+console.log("====== sort ======"); // ASCII (아스키) 코드 기준으로 정렬
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+console.log(fruits);
+
+const numbersSort = [40, 100, 1, 5, 25, 10];
+numbersSort.sort();
+console.log(numbersSort); // 숫자도 문자열 순서로 나옴
+
+// 숫자 오름차순
+// n1 - n2 > 0 이면 자리 바꿈
+numbersSort.sort((n1, n2) => n1 - n2);
+console.log(numbersSort);
+
+// 숫자 내림차순
+// n2 - n1 > 0 이면 자리 바꿈
+numbersSort.sort((n1, n2) => n2 - n1);
+console.log(numbersSort);
+
+// Array 활용
+const items = [
+  { name: "Apple", price: 50 },
+  { name: "Banana", price: 10 },
+  { name: "Mango", price: 30 },
+];
+
+items.sort((a, b) => a.price - b.price);
+console.log(items);
+
+items.sort((a, b) => b.price - a.price);
+console.log(items);
+
+// Array 순회
+const bangtan = ["RM", "진", "슈가", "제이홉", "지민", "뷔", "정국"];
+
+// for 사용
+
+for (let i = 0; i < bangtan.length; i++) {
+  console.log(bts[i]);
+}
+
+// for ~ of 사용
+for (const member of bts) {
+  console.log(member);
+}
+
+// forEach 사용
+bts.forEach((member, index, array) => {
+  console.log(`전체 ${array.length}명중에 ${index}번째 멤버 ${member}입니다.`);
+});
