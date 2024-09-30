@@ -5,6 +5,12 @@
 const numbers = [1, 2, 3, 4, 5];
 console.log(numbers[0]); // index는 0번부터 시작
 
+let array = new Array(2); // size를 2로 정의
+console.log(array);
+
+array = new Array(1, 2, 3, 4, 5);
+console.log(array);
+
 // 집합 (Set) : 중복 X
 
 // 맵 (Map) : Key - Value, 데이터 중심
