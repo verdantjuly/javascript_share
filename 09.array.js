@@ -52,3 +52,12 @@ console.log(first);
 let last = bts1.pop(); // 마지막 아이템 반환하고 삭제
 console.log(last);
 console.log(bts1);
+
+// 특정한 index에서 count만큼 삭제 splice(index,count)
+const deleted = bts1.splice(1, 1);
+console.log(bts1);
+console.log(deleted);
+
+// 특정한 index에서 추가 splice(index, 0, item, item, ...)
+bts1.splice(1, 0, "차은우", "이도현");
+console.log(bts1);
