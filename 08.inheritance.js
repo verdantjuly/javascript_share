@@ -66,10 +66,18 @@ class Truck extends Car {
     super(speed, wheels, seats); // Car 클래스 상속
     this.loadage = 0;
   }
-  load = () => {
-    console.log("load");
+  load = (ton) => {
+    this.loadage = ton;
+    console.log(`load ${this.loadage}tons`);
   };
   unload = () => {
+    this.loadage = 0;
     console.log("unLoad");
   };
 }
+
+const t1 = new Truck(40, 8, 2);
+const t2 = new Truck(40, 6, 4);
+
+t1.load(10);
+t2.unload();
