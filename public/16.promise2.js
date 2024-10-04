@@ -28,11 +28,30 @@ axios
   })
   .then((articleList) => {
     const list = articleList
-      .map((article) => {
-        return `<h3>${article.title}</h3>
-        <img src= '${article.image}' width=300 height=200 />`;
+      .map((article, index) => {
+        return `
+        <div id = "contaniner" style="margin:40px;">
+          <div id = "title-box" style="display: flex; justify-contnet:row; align-items:center; height:60px;">
+            <p style="font-size: 40px !important;">${index + 1}. <p>
+            <p>${article.title}</p>
+          </div>
+          <div id = "author-box" style="display: flex; justify-contnet:row; align-items:center;">
+            <img style="border-radius:50%; margin-right:10px;" src= '${
+              article.authorImage
+            }' width=30/> 
+            <a href='${
+              article.authorUrl
+            }' style="color:black; text-decoration:none;">
+              <p>${article.authorName}</p
+            </a>
+          </div>       
+          <a href=${article.url}>
+          <img src= '${article.image}' width=300/>
+          </a>  
+        </div>
+        `;
       })
-      .join();
+      .join("");
     articleWritter(list);
   })
   .catch((error) => console.log(error))
