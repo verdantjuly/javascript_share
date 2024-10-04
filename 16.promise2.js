@@ -29,6 +29,7 @@ axios
       };
     });
   })
+  .then(console.log)
   .catch((error) => new Error(error))
   .finally(() => {
     console.log("완료");
