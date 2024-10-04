@@ -19,3 +19,5 @@ const calc2 = function (a, callback, b) {
 };
 
 calc2(7, add, 2);
+
+calc2(7, (a, b) => a + b, 2);
