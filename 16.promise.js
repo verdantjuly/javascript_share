@@ -58,3 +58,4 @@ const user = {
 
 const finalResult = registerByPromise(user);
 finalResult.then(console.log);
+// resolve 에 console.log 가 들어간다.
