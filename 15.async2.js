@@ -2,6 +2,7 @@
 const db = [];
 
 function saveDB(user, callback) {
+  db.push(user);
   console.log(`${user.name}이 저장되었습니다.`);
   return callback(user);
 }
