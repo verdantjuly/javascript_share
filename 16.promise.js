@@ -20,7 +20,7 @@ function saveDB(user) {
     if (db.length > oldDBlength) {
       resolve(user);
     } else {
-      reject(new Error("Save DB Error"));
+      reject(new Error(`Save DB Error : ${user.name} 저장에 실패하였습니다.`));
     }
   });
 }
