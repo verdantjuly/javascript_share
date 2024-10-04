@@ -55,4 +55,4 @@ const user = {
   email: "verdantjuly@kakao.com",
 };
 
-register(user);
+console.log(register(user));
