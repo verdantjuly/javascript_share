@@ -6,7 +6,7 @@ function random() {
 
 function lotto() {
   const result = new Set();
-  while (result.size <= 5) {
+  while (result.size < 6) {
     result.add(random());
   }
   return result;
