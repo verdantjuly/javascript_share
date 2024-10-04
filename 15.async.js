@@ -5,11 +5,11 @@ function asyncTest(name, callback) {
   setTimeout(() => {
     // Handler () => {} 매개변수도 없고 반환 값도 없음, 이벤트 시 사용
     callback(name);
-  }, 3000); // setTimeout의 단위는 ms(밀리세컨드)
+  }, 1); // setTimeout의 단위는 ms(밀리세컨드)
 }
 
 function doOtherthings() {
-  for (i = 0; i <= 300; i = i + 1) {
+  for (i = 0; i <= 1000; i = i + 1) {
     console.log(`${i}번째 작업  `);
   }
 }
