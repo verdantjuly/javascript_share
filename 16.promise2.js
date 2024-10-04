@@ -24,8 +24,8 @@ axios
   .then((articleList) => {
     return articleList.map((article, index) => {
       return {
+        순위: index,
         제목: article.title,
-        순위: article.index,
       };
     });
   })
