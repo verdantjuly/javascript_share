@@ -38,7 +38,7 @@ axios
           <div id = "author-box" style="display: flex; justify-contnet:row; align-items:center;">
             <img style="border-radius:50%; margin-right:10px;" src= '${
               article.authorImage
-            }' width=30/> 
+            }' width=30 height=30 /> 
             <a href='${
               article.authorUrl
             }' style="color:black; text-decoration:none;">
