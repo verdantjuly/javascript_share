@@ -20,3 +20,39 @@ asyncTest("뷔", (name) => {
 });
 
 doOtherthings();
+
+// 회원가입
+// DB 저장 > 성공 > 이메일 전송
+
+const db = [];
+function saveDB(user, callback) {
+  db.push(user);
+  console.log(`save ${user.name}`);
+  return callback(user);
+}
+
+function sendEmail(user, callback) {
+  console.log(`send email to ${user.email}`);
+  return callback(user);
+}
+
+function getResult(user) {
+  return `success register ${user.name}`;
+}
+
+// 콜백 지옥
+
+function register(user) {
+  return saveDB(user, (user) => {
+    return sendEmail(user, (user) => {
+      return getResult(user);
+    });
+  });
+}
+
+const user = {
+  name: "이다영",
+  email: "verdantjuly@kakao.com",
+};
+
+register(user);
