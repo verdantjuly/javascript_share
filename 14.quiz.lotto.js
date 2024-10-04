@@ -1,3 +1,5 @@
+// Array를 이용한 로또 추첨기
+
 function random() {
   return Math.ceil(Math.random() * 44);
 }
