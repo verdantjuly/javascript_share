@@ -6,6 +6,7 @@ function asyncTest(name, callback) {
     // Handler () => {} 매개변수도 없고 반환 값도 없음, 이벤트 시 사용
     callback(name);
   }, 1); // setTimeout의 단위는 ms(밀리세컨드)
+  // 매개변수가 없는 콜백을 전달한다면 setTimeout에 바로 콜백을 넣어도 된다
 }
 
 function doOtherthings() {
