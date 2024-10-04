@@ -11,7 +11,7 @@ axios
     }
 
     if (res.data) {
-      return result.data;
+      return res.data;
     }
     throw new Error("데이터가 없습니다.");
   })
