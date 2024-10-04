@@ -22,14 +22,10 @@ axios
     return data.articleList;
   })
   .then((articleList) => {
-    return articleList.map((article, index) => {
-      return {
-        순위: index + 1,
-        제목: article.title,
-      };
+    articleList.forEach((article, index) => {
+      console.log(`${index}위 : ${article.title}`);
     });
   })
-  .then(console.log)
   .catch((error) => new Error(error))
   .finally(() => {
     console.log("완료");
