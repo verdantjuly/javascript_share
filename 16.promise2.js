@@ -5,12 +5,12 @@ const url =
   "http://raw.githubusercontent.com/wapj/jsbackend/main/movieinfo.json";
 axios
   .get(url)
-  .then((result) => {
-    if (result.status !== 200) {
+  .then((res) => {
+    if (res.status !== 200) {
       throw new Error("요청에 실패하였습니다.");
     }
 
-    if (result.data) {
+    if (res.data) {
       return result.data;
     }
     throw new Error("데이터가 없습니다.");
