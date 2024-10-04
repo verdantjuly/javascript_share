@@ -23,7 +23,7 @@ axios
   })
   .then((articleList) => {
     articleList.forEach((article, index) => {
-      console.log(`${index}위 : ${article.title}`);
+      console.log(`${index + 1}위 : ${article.title}`);
     });
   })
   .catch((error) => new Error(error))
