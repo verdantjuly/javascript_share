@@ -42,9 +42,7 @@ function registerByPromise(user) {
   const result = saveDB(user) // result 에는 Promise 객체가 넘어 온다.
     .then(sendEmail)
     .then(getResult)
-    .catch((error) => {
-      new Error(error);
-    })
+    .catch((error) => new Error(error))
     .finally(() => {
       console.log("====== 완료! ======");
     });
