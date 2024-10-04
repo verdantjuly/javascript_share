@@ -16,8 +16,8 @@ function getResult(user) {
   return `${user.name} 이 회원가입 완료 되었습니다.`;
 }
 
-function register(user) {
-  return saveDB(user, () => {
+function register(user, callback) {
+  return callback(user, () => {
     return sendEmail(user, () => {
       return getResult(user);
     });
@@ -29,4 +29,4 @@ const user = {
   email: "soccer@love.com",
 };
 
-console.log(register(user));
+console.log(register(user, saveDB));
